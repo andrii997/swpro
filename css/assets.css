@@ -1,0 +1,192 @@
+* {
+	outline: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	color: #fff;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	margin: 0;
+}
+
+/* Шрифты */
+
+@font-face {
+ src: url(fonts/Montserrat-SemiBold.ttf);
+ font-family: Montserrat;
+ font-style: normal;
+ font-weight: 600;
+ font-display: swap;
+}
+
+@font-face {
+ src: url(fonts/Montserrat-Medium.ttf);
+ font-family: Montserrat;
+ font-style: normal;
+ font-weight: 500;
+ font-display: swap;
+}
+
+@font-face {
+ src: url(fonts/Montserrat-Bold.ttf);
+ font-family: Montserrat;
+ font-style: normal;
+ font-weight: bold;
+ font-display: swap;
+}
+
+section {
+	padding: 100px 0;
+}
+
+
+.btn-fill {
+	background: #cea775;
+	box-shadow: 0px 3px 10px #615246;
+	padding: 8px 23px;
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	max-width: 300px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 188.57%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: .2s ease-out;
+	border: none;
+}
+
+.btn-fill:hover {
+    background: #bd9e6a;
+    box-shadow: 0px 5px 14px #504439;
+    color: #fff;
+}
+.btn-fill:active {
+	background: #BFA67C;
+	box-shadow: 0px 5px 10px #B39275;
+	color: #fff;
+}
+.btn-fill:disabled {
+	opacity: .4;
+}
+
+.btn {
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	padding: 8px 25px;
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	max-width: 300px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 188.57%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: .2s ease-out;
+}
+
+.btn:hover {
+	border: 1px solid #B39C75;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 5px #B39C75;
+	color: rgba(255, 255, 255, 0.85);
+}
+.btn:active {
+	color: #fff;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 5px #B39C75;
+}
+.btn:disabled {
+	opacity: .4;
+	box-shadow: none;
+}
+
+.btn-fill > img,
+.btn > img {
+	margin-right: 15px;
+	max-width: 25px;
+}
+
+
+/* Typography */
+
+
+h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 190%;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+}
+
+h1 > span {
+	color: #FCD680;
+}
+
+h2.title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 43px;
+	letter-spacing: 0.02em;
+	color: #FDF8F8;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
